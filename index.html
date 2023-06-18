@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/26679ddbf5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="left-container" id="signIn">
+                <div class="left">
+                    <h1 class="a-heading">SIGN IN</h1>
+                    <form class="login">
+                        <input type="email" placeholder="Email" />
+                        <div class="password" id="passwprd">
+                        <input type="password" placeholder="Password" id="input1"/>
+                        <i class="fa-solid fa-eye" id="eyeicon" onclick="togglePassword()"></i>
+                        </div>
+                        <p class="f-password">Forgot Passvord?</p>
+                        <button type="submit" class="s-button">SIGN IN</button>
+                        <p class="n-new">New Member<i class="t-button" aria-hidden="true" onclick="showSignup()">Sign Up Now</i></p>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="right-container" id="signUp">
+                <div class="right">
+                    <h1 class="a-heading">SIGN UP</h1>
+                    <form class="signup">
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="password" />
+                        <button type="submit" class="s-button">SIGN UP</button>
+                        <p class="n-new">Alreadi have an account?<i class="t-button" aria-hidden="true" onclick="hideSignup()">Sign in</i></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
